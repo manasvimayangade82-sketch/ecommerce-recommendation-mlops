@@ -1,0 +1,5 @@
+outs:
+- md5: 4930a00919afe3c3a7dbfbdb6897acea
+  size: 6427497
+  hash: md5
+  path: user_item_interactions.csv
