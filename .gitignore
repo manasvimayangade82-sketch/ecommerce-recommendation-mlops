@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+.streamlit/secrets.toml
+
+mlruns/
+*.log
+
+data/raw/*.csv
+data/processed/*.csv
+
+models/*.pkl
+models/*.joblib
+
+.ipynb_checkpoints/
