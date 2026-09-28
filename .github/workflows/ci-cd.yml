@@ -48,4 +48,4 @@ jobs:
 
       - name: Run tests
         run: |
-          PYTHONPATH=. pytest -q src/tests/test_api.py
+          python -m pytest -q src/tests/test_api.py

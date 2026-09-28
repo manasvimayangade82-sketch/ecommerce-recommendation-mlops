@@ -1,9 +1,12 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 from fastapi.testclient import TestClient
-from api.app import app
-
-app.router.on_startup.clear()
-
 import api.app as api_app
+
+api_app.app.router.on_startup.clear()
 
 api_app.model_info = {
     "selected_model": "Test Model"
@@ -11,7 +14,7 @@ api_app.model_info = {
 
 api_app.model = {}
 
-client = TestClient(app)
+client = TestClient(api_app.app)
 
 
 def test_root():
