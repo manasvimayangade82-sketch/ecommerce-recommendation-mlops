@@ -29,7 +29,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -q
+          python -m pytest -q src/tests/test_api.py
 
   docker:
     needs: test
@@ -45,7 +45,3 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t ecommerce-recommendation-api:latest .
-
-      - name: Run tests
-        run: |
-          python -m pytest -q src/tests/test_api.py
