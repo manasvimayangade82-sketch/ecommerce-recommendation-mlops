@@ -1,0 +1,22 @@
+{
+    "selected_model": "Content-Based",
+    "model_file": "content_model.pkl",
+    "best_model_path": "models\\best_model.pkl",
+    "selection_metric": "ndcg_at_10",
+    "selection_strategy": [
+        "ndcg_at_10",
+        "recall_at_10",
+        "f1_at_10",
+        "catalog_coverage"
+    ],
+    "metrics": {
+        "precision_at_10": 0.0487227560346847,
+        "recall_at_10": 0.0754614124867994,
+        "f1_at_10": 0.0456285565429362,
+        "hit_rate_at_10": 0.3372392781813921,
+        "ndcg_at_10": 0.0793895348387242,
+        "catalog_coverage": 0.6998077451249657,
+        "training_time_seconds": 0.293712854385376,
+        "inference_time_seconds": 110.10828828811646
+    }
+}
