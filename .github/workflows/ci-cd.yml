@@ -45,3 +45,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t ecommerce-recommendation-api:latest .
+
+      - name: Run tests
+        run: |
+          PYTHONPATH=. pytest -q src/tests/test_api.py
